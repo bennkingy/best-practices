@@ -1,9 +1,9 @@
 .header {
   height: 100vh;
   background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)),
+      to top,
+      rgba($color-primary-light, 0.9),
+      rgba($color-primary-dark, 0.6)),
   url('https://www.bkdigital.co.uk/wp-content/uploads/2018/11/bg.jpeg');
   background-size: cover;
   background-position: top;
@@ -13,9 +13,9 @@
           only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
           only screen and (min-width: 125em) {
       background-image: linear-gradient(
-          to right bottom,
-          rgba($color-primary-light, 0.8),
-          rgba($color-primary-dark, 0.8)),
+          to top,
+          rgba($color-primary-light, 0.9),
+          rgba($color-primary-dark, 0.6)),
       url(../img/hero.jpg);
   }
 
@@ -35,6 +35,34 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
+
+      h1 {
+          color: white;
+          font-size:5rem;
+          font-weight: 400;
+          text-transform: uppercase;
+        
+          span {
+               font-size: 8rem;
+               display: block;
+
+               > span {
+                   color: white;
+                   display: none;
+
+               }
+
+               &.heading-primary--main {
+                   color:white;
+               }
+
+               &.heading-primary--sub  {
+                color: white;
+                font-size: 4rem;
+            }
+          }
+      }
+
   }
 
   &__brand {
