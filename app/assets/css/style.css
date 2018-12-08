@@ -416,10 +416,48 @@ th {
           color: white;
           display: none; }
         .header__text-box h1 span.heading-primary--main {
-          color: white; }
+          color: white;
+          letter-spacing: 2.7rem;
+          text-indent: 2.3rem; }
         .header__text-box h1 span.heading-primary--sub {
           color: white;
-          font-size: 4rem; }
+          font-size: 4rem;
+          margin-top: -4rem; }
+    .header__text-box .btn--clear {
+      margin-top: 0rem;
+      position: relative;
+      color: white;
+      padding: 1.3rem 2.3rem;
+      font-size: 2rem;
+      transition: all 300ms ease-out; }
+      .header__text-box .btn--clear:hover {
+        padding: 1.3rem 3.3rem;
+        transition: all 300ms ease-out; }
+      .header__text-box .btn--clear:hover > span {
+        transform: translate3d(-1.6rem, 0, 0); }
+      .header__text-box .btn--clear i {
+        background: url("https://www.bkdigital.co.uk/wp-content/uploads/2018/05/eye.png");
+        height: 15px;
+        display: inline-block; }
+      .header__text-box .btn--clear > span {
+        display: inline-block;
+        position: relative;
+        transition: all 300ms ease-out;
+        will-change: transform; }
+      .header__text-box .btn--clear > span > i {
+        position: absolute;
+        width: 1.3em;
+        right: 0px;
+        right: 0rem;
+        opacity: 0;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        transition: all 300ms ease-out;
+        will-change: right, opacity; }
+      .header__text-box .btn--clear:hover > span > i {
+        opacity: 1;
+        right: -3.3rem; }
   .header__brand {
     height: 20rem; }
   .header .px-row-polygon {
@@ -436,7 +474,6 @@ th {
   display: none; }
 
 .navigation__button {
-  background-color: #fff;
   height: 7rem;
   width: 7rem;
   position: fixed;
@@ -517,9 +554,9 @@ th {
   position: relative;
   margin-top: 3.5rem; }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-    width: 3rem;
-    height: 2px;
-    background-color: #333;
+    width: 4rem;
+    height: 4px;
+    background-color: white;
     display: inline-block;
     border-radius: 4px; }
   .navigation__icon::before, .navigation__icon::after {
@@ -528,15 +565,15 @@ th {
     left: 0;
     transition: all .2s; }
   .navigation__icon::before {
-    top: -.8rem; }
+    top: -1rem; }
   .navigation__icon::after {
-    top: .8rem; }
+    top: 1rem; }
 
 .navigation__button:hover .navigation__icon::before {
-  top: -1rem; }
+  top: -1.2rem; }
 
 .navigation__button:hover .navigation__icon::after {
-  top: 1rem; }
+  top: 1.2rem; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent; }
@@ -550,6 +587,24 @@ th {
   top: 0;
   -ms-transform: rotate(-135deg);
       transform: rotate(-135deg); }
+
+.btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 @font-face {
   font-family: 'Font-Name';

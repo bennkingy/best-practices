@@ -1,7 +1,7 @@
 /*!
- * BK Digital
+ * bk-digital
  * Best practice web design
- * https://www.bkdigital.co.uk
+ * http://phpstack-97689-686401.cloudwaysapps.com/
  * @author Benn King
  * @version 1.0.5
  * Copyright 2018. MIT licensed.

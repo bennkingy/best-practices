@@ -54,14 +54,61 @@
 
                &.heading-primary--main {
                    color:white;
+                   letter-spacing: 2.7rem;
+                   text-indent: 2.3rem;
                }
 
                &.heading-primary--sub  {
                 color: white;
                 font-size: 4rem;
+                margin-top: -4rem;
             }
           }
       }
+
+    .btn--clear {
+        margin-top: 0rem;
+        position: relative;
+        color: white;
+        // border: 2px solid white;
+        padding: 1.3rem 2.3rem;
+        // border-radius: 4px;
+        font-size: 2rem;
+        transition: all 300ms ease-out;    
+         &:hover {
+            padding: 1.3rem 3.3rem;
+            transition: all 300ms ease-out;    
+         }
+         &:hover > span {
+             transform: translate3d(-1.6rem, 0, 0);
+            }
+         i {
+            background: url('https://www.bkdigital.co.uk/wp-content/uploads/2018/05/eye.png');
+            height: 15px;
+            display: inline-block;
+         }
+         > span {
+                 display: inline-block;
+                 position: relative;
+                 transition: all 300ms ease-out;
+                 will-change: transform;
+             }
+        > span > i {
+                    position: absolute;
+                    width: 1.3em;
+                    right: 0px;
+                    right: 0rem;
+                    opacity: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: all 300ms ease-out;
+                    will-change: right, opacity;
+                }
+        &:hover > span > i {
+                            opacity: 1;
+                            right: -3.3rem;
+        }
+    }
 
   }
 
