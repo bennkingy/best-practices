@@ -54,14 +54,14 @@
 
                &.heading-primary--main {
                    color:white;
-                   letter-spacing: 2.7rem;
+                   letter-spacing: 2.6rem;
                    text-indent: 2.3rem;
                }
 
                &.heading-primary--sub  {
                 color: white;
                 font-size: 4rem;
-                margin-top: -4rem;
+                margin-top: -1rem;
             }
           }
       }
@@ -74,7 +74,8 @@
         padding: 1.3rem 2.3rem;
         // border-radius: 4px;
         font-size: 2rem;
-        transition: all 300ms ease-out;    
+        transition: all 300ms ease-out;   
+        font-weight: 400; 
          &:hover {
             padding: 1.3rem 3.3rem;
             transition: all 300ms ease-out;    
