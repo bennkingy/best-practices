@@ -24,7 +24,7 @@ body {
 
 body, html {
   min-height: 100vh;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -417,19 +417,20 @@ th {
           display: none; }
         .header__text-box h1 span.heading-primary--main {
           color: white;
-          letter-spacing: 2.7rem;
+          letter-spacing: 2.6rem;
           text-indent: 2.3rem; }
         .header__text-box h1 span.heading-primary--sub {
           color: white;
           font-size: 4rem;
-          margin-top: -4rem; }
+          margin-top: -1rem; }
     .header__text-box .btn--clear {
       margin-top: 0rem;
       position: relative;
       color: white;
       padding: 1.3rem 2.3rem;
       font-size: 2rem;
-      transition: all 300ms ease-out; }
+      transition: all 300ms ease-out;
+      font-weight: 400; }
       .header__text-box .btn--clear:hover {
         padding: 1.3rem 3.3rem;
         transition: all 300ms ease-out; }
@@ -477,7 +478,7 @@ th {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 4rem;
+  top: 3.9rem;
   right: 4rem;
   border-radius: 50%;
   z-index: 2000;
@@ -492,7 +493,7 @@ th {
   position: fixed;
   top: 4.5rem;
   right: 4.5rem;
-  background-image: radial-gradient(#040404, #040404);
+  background: #061421;
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
@@ -519,7 +520,8 @@ th {
           padding-inline-start: 0px; }
 
 .navigation__item {
-  margin: 1rem; }
+  margin: 1rem;
+  font-family: 'Raleway', sans-serif; }
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
@@ -543,8 +545,8 @@ th {
       transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  -ms-transform: scale(80);
-      transform: scale(80); }
+  -ms-transform: scale(100);
+      transform: scale(100); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
